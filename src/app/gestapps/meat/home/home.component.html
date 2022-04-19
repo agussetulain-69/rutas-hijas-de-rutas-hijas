@@ -1,0 +1,36 @@
+<h1>Estoy en GestApps/Meat - Mostrando el homeComponent del meat-routing </h1>
+
+<h1><a routerLink="/gestapps/meat/catalogue" class="h1">Ir a módulo catálogo</a></h1>
+
+<!--
+  Para el tema de rutas, en una aplicación real, te recomiendo usar ENUMS y tenerlos ahí.
+  Es mucho más organizado y fácil de manejar.
+  Sólo tendrías que cambiar desde el enum (si tu vieras que hacerlo),
+  sino en cada archivo HTML o TS donde estés redireccionado a una ruta.
+
+  Por ejemplo, en un archivo llamado "routes.enum.ts":
+
+  export enum Routes {
+    Home = '/gestapps',
+    Meat = '/gestapps/meat',
+    Fruit = '/gestapps/fruit',
+    Other = '/other',
+    ...
+  }
+
+  y luego p.ej. desde el componente que quieras redireccionar:
+
+
+  <a [routerLink]="Routes.Meat">
+  ---- DESDE HTML no sé si pueda, pero el siguiente del TS sí, HTML no estoy seguro, probalo y chiflame jaja.
+
+  ...
+  public goToMeat() {
+    this.router.navigate([Routes.Meat]);
+  }
+  ...
+-->
+
+
+
+

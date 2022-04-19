@@ -1,27 +1,8 @@
-# RutasHijasDeRutasHijas
+# Rutas hijas con otras rutas hijas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
+## A TENER EN CUENTA
+* Chequear que el `RouterModule` tenga a continuación su `.forChild(routes)` en los IMPORTS de cada `X-routing.module.ts`, de lo contrario, Angular jamás va a adivinar cuáles son las rutas que debe usar. *MUCHO OJO CON ESTO* (para luego no andar con dolores de cabeza ya que es fácil que se pase por alto porque casi ni te avisa que es un "error").
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## NOTAS
++ Omití instalar el Agular Material ya que esto es tema del Angular propio. No usé ningúna herramienta para los estilos porque no ví necesario utilizarlos, es algo sencillo para demostrar sólo funcionamiento.
++ Dejé notas en distintos lugares (archivos HTML) como tips o notas.
